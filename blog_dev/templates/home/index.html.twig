@@ -1,0 +1,16 @@
+{% extends "layouts/base.html.twig" %}
+
+{% block titre %}
+    {{titre}}
+{% endblock %}
+
+{% block main %}
+<div class="row title text-center mt-5">
+    <h1>
+        {{titre}}
+    </h1>
+    <br>
+    {% set colors = ["Red", "Green", "blue"] %}
+    <p> {{ colors|join("-")}} </p>
+</div>
+{% endblock %}
